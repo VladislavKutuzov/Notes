@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    display: flex;
+}
+
+/* Sidebar
+=====================*/
+.sidebar {
+    width: 100px;
+    height: 100vh;
+    border-right: 1px solid rgb(208, 208, 208);
+}
+
+.logo {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.add {
+    margin: 80px auto 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 30px;
+    background: #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.add::after,
+.add::before {
+    content: '';
+    width: 16px;
+    height: 2px;
+    background: #fff;
+    display: block;
+    border-radius: 1px;
+    position: absolute;
+}
+
+.add::after {
+    transform: rotate(90deg);
+}
+
+.active {
+    animation: addActive 0.5s ease;
+}
+
+@keyframes addActive {
+    0% {
+
+    }
+
+    50% {
+        transform: rotate(360deg)scale(0.8);
+        margin-top: 60px;
+    }
+    100% {
+        transform: rotate(720deg)scale(1);
+
+    }
+}
+
+.color__selection {
+    position: relative;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.color__active {
+    opacity: 1;
+}
+
+.color {
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border-radius: 20px;
+    margin: 20px auto 0;
+    position: relative;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.color:hover {
+    transform: scale(1.2);
+}
+
+/* Intro
+=====================*/
+.intro {
+    padding: 0px 30px;
+}
+
+.title {
+    font-size: 56px;
+}
+
+.block {
+    display: grid;
+    grid-template-columns: 26% 26% 26% 26% ;
+}
+
+.list {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    margin: 15px;
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.2);
+}
