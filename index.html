@@ -18,34 +18,26 @@
 <body>
     <div class="sidebar">
         <div class="logo">Docket</div>
-        <div class="add" onclick="addActive()"></div>
+        <div class="add"></div>
 
         <div class="color__selection">
-            <div class="color yellow"></div>
-            <div class="color orange"></div>
-            <div class="color purple"></div>
-            <div class="color blue"></div>
-            <div class="color green"></div>
+            <div onclick="add('yellow')" class="color yellow"></div>
+            <div onclick="add('orange')" class="color orange"></div>
+            <div onclick="add('purple')" class="color purple"></div>
+            <div onclick="add('blue')" class="color blue"></div>
+            <div onclick="add('green')" class="color green"></div>
         </div>
     </div>
     <div class="intro">
-        <h1 class="title" >Notes</h1>
+        <h1 class="title">Notes</h1>
 
         <div class="block">
-            <div class="list orange"></div>
-            <div class="list green"></div>
-            <div class="list purple"></div>
-            <div class="list blue"></div>
-            <div class="list yellow"></div>
-            <div class="list orange"></div>
-            <div class="list green"></div>
-            <div class="list purple"></div>
-            <div class="list blue"></div>
-
-
+            <!-- Add list -->
         </div>
     </div>
 
     <script src="scripts/add.js"></script>
+    <script src="scripts/object.js"></script>
+    <script src="scripts/list.js"></script>
 </body>
 </html>

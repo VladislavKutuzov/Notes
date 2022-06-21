@@ -1,22 +1,40 @@
+:root {
+    --yellow: #f5c16e;
+    --orange: #f5956e;
+    --purple: #af8cf4;
+    --blue: #01ccf5;
+    --green: #dbe58a;
+}
+
+
+
+
 .yellow {
-    background: #f5c16e;
+    background: var(--yellow);
 }
 
 .orange {
-    background: #f5956e;
+    background: var(--orange);
 }
 
 .purple {
-    background: #af8cf4;
+    background: var(--purple);
 }
 
 .blue {
-    background: #01ccf5;
+    background: var(--blue);
 }
 
 .green {
-    background: #dbe58a;
+    background: var(--green);
 }
 
+h1 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
 
 
