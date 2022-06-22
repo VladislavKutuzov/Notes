@@ -1,12 +1,10 @@
-
+const textListNode = document.querySelector('.list--text');
 let boolBtnList = false;
+
 function textDoctupe() {
-    const textListNode = document.querySelector('.list--text');
-    if (boolBtnList) {
-        textListNode.classList.add('text--doctupe');
-        boolBtnList = !boolBtnList;
-    } else {
-        textListNode.classList.remove('text--doctupe');
-        boolBtnList = !boolBtnList;
-    }
+    const listInnerNode = document.querySelector('.list__inner');
+    const listNode = document.querySelector('.list__inner');
+    listInnerNode.classList.add('editing');
+    listNode.classList.add('editing');
+
 }

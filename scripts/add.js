@@ -24,13 +24,16 @@ addNode.addEventListener('click', () => {
 function add(color) {
     const date = new Date().toLocaleDateString();
     const listNode = `
-            <div class="list ${color}">
-                <p class="list--text text--doctupe">Привет, это моя первая заметка</p>
-                <div class="list__footer">
-                    <div class="data">${date}</div>
-                    <div class="list__btn" onclick="textDoctupe()"><img src="images/pencil.png" alt=""></div>
-                </div>
-            </div>`;
+    <div class="list ${color}">
+        <div class="list__inner">
+            <p class="list--text text--doctupe">Привет, это моя первая заметка</p>
+            <div class="list__footer">
+                <div class="data">${date}</div>
+                <div class="list__btn" onclick="textDoctupe()"><img src="images/pencil.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+`;
     blockNode.innerHTML += listNode;
     colorSel.classList.remove('color__active');
     bool = !bool;
