@@ -133,10 +133,13 @@ body {
 
 
 .list--text {
+    height: 80%;
     width: 100%;
     border: 0;
     font-size: 18px;
     background: transparent;
+    resize: none; /* Запрещаем изменять размер */
+    outline: none;  /* удаляет обводку в браузерах хром(желтая) и сафари(синяя) */
 }
 
 .text--doctupe {
@@ -185,17 +188,13 @@ body {
 .editing__inner {
     width: 500px;
     height: 400px;
-    /* left: 50%;
-    margin-left: -250px;
-    top: 50%;
-    margin-top: -200px; */
+    transition: 1s;
 }
 
-.editing__list {
-    width: 500px;
-    height: 400px;
-    /* left: 50%;
+.editing {
+    position: absolute;
+    left: 50%;
     margin-left: -250px;
     top: 50%;
-    margin-top: -200px; */
+    margin-top: -200px;
 }

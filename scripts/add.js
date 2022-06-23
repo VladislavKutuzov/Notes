@@ -26,7 +26,7 @@ function add(color) {
     const listNode = `
     <div class="list ${color}">
         <div class="list__inner">
-            <p class="list--text text--doctupe">Привет, это моя первая заметка</p>
+        <textarea class="list--text text--doctupe" name="" id="" cols="30" rows="10"></textarea>
             <div class="list__footer">
                 <div class="data">${date}</div>
                 <div class="list__btn" onclick="textDoctupe()"><img src="images/pencil.png" alt=""></div>
