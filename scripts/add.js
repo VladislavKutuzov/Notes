@@ -34,7 +34,7 @@ function add(color) {
         </div>
     </div>
 `;
-    blockNode.innerHTML += listNode;
+    blockNode.innerHTML = listNode + blockNode.innerHTML;
     colorSel.classList.remove('color__active');
     bool = !bool;
 };
